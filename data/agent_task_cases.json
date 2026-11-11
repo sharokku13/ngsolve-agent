@@ -1,0 +1,78 @@
+[
+  {
+    "case_id": "P1",
+    "request": "Solve the supported smooth manufactured Poisson problem on the unit square. Set mesh size maxh to 0.2 and use quadratic elements.",
+    "expected_task": {
+      "task_id": "poisson_unit_square_smooth",
+      "maxh": 0.2,
+      "order": 2,
+      "grid_samples": 64
+    }
+  },
+  {
+    "case_id": "P2",
+    "request": "Use the same unit-square manufactured Poisson problem, but set the mesh size to 0.1 and keep quadratic elements.",
+    "expected_task": {
+      "task_id": "poisson_unit_square_smooth",
+      "maxh": 0.1,
+      "order": 2,
+      "grid_samples": 64
+    }
+  },
+  {
+    "case_id": "P3",
+    "request": "For the supported smooth unit-square Poisson case, use cubic finite elements and mesh size 0.2.",
+    "expected_task": {
+      "task_id": "poisson_unit_square_smooth",
+      "maxh": 0.2,
+      "order": 3,
+      "grid_samples": 64
+    }
+  },
+  {
+    "case_id": "P4",
+    "request": "Run the supported smooth Poisson problem on the unit square with mesh size 0.1, polynomial order 3, and 128 plot samples.",
+    "expected_task": {
+      "task_id": "poisson_unit_square_smooth",
+      "maxh": 0.1,
+      "order": 3,
+      "grid_samples": 128
+    }
+  },
+  {
+    "case_id": "P5",
+    "request": "Use the smooth manufactured Poisson task in the unit square, mesh size 0.3, and quadratic elements.",
+    "expected_task": {
+      "task_id": "poisson_unit_square_smooth",
+      "maxh": 0.3,
+      "order": 2,
+      "grid_samples": 64
+    }
+  },
+  {
+    "case_id": "S1",
+    "request": "Solve the supported steady Stokes flow around a cylinder in a channel with mesh size 0.05.",
+    "expected_task": {
+      "task_id": "ngsolve_tutorial_stokes_flow_around_cylinder",
+      "maxh": 0.05
+    }
+  },
+  {
+    "case_id": "P6",
+    "request": "Solve the manufactured sine Poisson equation -Delta u = 2*pi^2*sin(pi*x)*sin(pi*y) on [0,1]^2 with zero Dirichlet boundary. Use h=0.1, cubic elements, and 128 plot samples.",
+    "expected_task": {
+      "task_id": "poisson_unit_square_smooth",
+      "maxh": 0.1,
+      "order": 3,
+      "grid_samples": 128
+    }
+  },
+  {
+    "case_id": "S2",
+    "request": "Compute steady incompressible Stokes flow in the NGSolve channel around a cylinder using Taylor-Hood P2/P1; set mesh maxh=0.05.",
+    "expected_task": {
+      "task_id": "ngsolve_tutorial_stokes_flow_around_cylinder",
+      "maxh": 0.05
+    }
+  }
+]
